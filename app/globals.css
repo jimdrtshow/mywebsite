@@ -79,3 +79,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/*Projects page for bug LastImage*/
+ul::after {
+  content: "";
+  display: block;
+  flex-grow: 10;
+}
