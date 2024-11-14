@@ -10,8 +10,9 @@ export default function Home() {
       {/* <Navigation /> */}
       <Heading />
       <AboutUs />
+      {/* 
       <Services />
-      <Projects />
+      <Projects /> */}
     </main>
   );
 }

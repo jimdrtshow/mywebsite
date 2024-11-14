@@ -1,21 +1,30 @@
+// pages/index.tsx
+// pages/index.tsx
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Prompt } from "next/font/google";
+
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Heading() {
   return (
-    <div className="h-screen w-screen">
-      <div className=" h-3/4 w-screen   flex lg:items-end items-center justify-center">
-        <h1 className="lg:text-9xl md:text-7xl text-5xl lg:leading-tight leading-relaxed mx-10 text-white">
-          An alliance <span className="text-spotify">between</span> performance
-          and design <span className="text-spotify">.</span>
-        </h1>
+    <div className="relative h-screen w-full overflow-hidden bg-black flex justify-center items-center -z-50">
+      <div
+        className={`${prompt.className} antialiased absolute whitespace-nowrap animate-scroll text-[320px] text-orange-500 opacity-20 uppercase`}
+      >
+        ウェブ＆デザイン事務所 - Jim studio®
       </div>
-      <div className=" h-1/4 w-screen flex items-center justify-center fixed ">
-        <Button
-          variant="outline"
-          className="rounded-3xl bg-transparent text-white "
-        >
-          more.
-        </Button>
+      <div className=" absolute h-screen w-screen flex justify-center items-center z-50">
+        <Image
+          src="/images/homepage.png"
+          alt="#"
+          width={700}
+          height={700}
+          className="rounded-xl "
+        />
       </div>
     </div>
   );
