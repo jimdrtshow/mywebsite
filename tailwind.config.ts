@@ -9,12 +9,18 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		// Heading Text Color Gradient
+		backgroundImage: {
+			'heading-gradient': 'linear-gradient(90deg, rgba(255, 255, 255, 1) 30%, rgba(88, 87, 87, 1) 100%)',
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
 			spotify: '#1ed760',
-			myGreyBg: '#18181b',
+			myGreyButtonBg: '#1e1f22',
+			myGreyWebsiteBg: '#0d0a0a',
 			myGreyText: '#87878f',
+			myGreyTextGradient: '#abbaab',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
