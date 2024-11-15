@@ -9,10 +9,10 @@ export default function Home() {
     <main>
       {/* <Navigation /> */}
       <Heading />
-      <AboutUs />
-      {/* 
-      <Services />
-      <Projects /> */}
+      {/* <AboutUs /> */}
+
+      {/* <Services /> */}
+      {/* <Projects /> */}
     </main>
   );
 }

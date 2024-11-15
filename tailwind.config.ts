@@ -13,6 +13,8 @@ const config: Config = {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
 			spotify: '#1ed760',
+			myGreyBg: '#18181b',
+			myGreyText: '#87878f',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
