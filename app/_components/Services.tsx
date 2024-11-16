@@ -1,191 +1,118 @@
+import React from "react";
+import CardComponent from "./CardComponent";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
+import { FaArrowRight } from "react-icons/fa6";
 
+// Données des cartes
+const cardsData = [
+  {
+    title: "Basic",
+    description:
+      "Two to 5-page showcase website, ideal for search engine optimization ",
+    price: 600,
+    functionality1: "Responsive design",
+    functionality2: "Clear and easy navigation",
+    functionality3: "Simple and quick contact form",
+    functionality4: "SEO optimization",
+  },
+  {
+    title: "Pro",
+    description:
+      "Two to 5-page showcase website, ideal for search engine optimization ",
+    price: 600,
+    functionality1: "Responsive design",
+    functionality2: "Clear and easy navigation",
+    functionality3: "Simple and quick contact form",
+    functionality4: "SEO optimization",
+  },
+  {
+    title: "Expert",
+    description:
+      "Multi-pages e-commerce website, ideal for search engine optimization ",
+    price: 600,
+    functionality1: "Responsive design",
+    functionality2: "Clear and easy navigation",
+    functionality3: "Simple and quick contact form",
+    functionality4: "SEO optimization",
+  },
+];
+
+// Composant Heading avec le carrousel
 export default function Heading() {
   return (
-    <div className="h-[100vh] w-[100vw]">
-      <div className="h-[10vh] w-[100vw] flex justify-start items-center ">
-        <p className="text-white text-5xl tracking-widest mx-10">
-          <span className="text-spotify"> Our </span>Services.
-        </p>
-      </div>
-
-      {/* Tabs & Phones */}
-      <div className="xl:hidden h-[90vh] md:h-[150vh] w-[100vw] flex flex-col justify-around items-center">
-        <div className="h-1/4 md:h-[40vh] w-4/5 md:w-3/5 ">
-          {" "}
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <Image
-                className="rounded-xl "
-                src="/images/test.jpg"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover" // L'image couvrira entièrement le conteneur
-                objectPosition="center" // Centrer l'image dans le conteneur
-              />
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Expert
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
-              >
-                A partir de 2500€
-              </Badge>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="h-1/4 md:h-[40vh] w-4/5 md:w-3/5 ">
-          {" "}
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <Image
-                className="rounded-xl "
-                src="/images/test.jpg"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover" // L'image couvrira entièrement le conteneur
-                objectPosition="center" // Centrer l'image dans le conteneur
-              />
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Expert
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
-              >
-                A partir de 2500€
-              </Badge>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="h-1/4 md:h-[40vh] w-4/5 md:w-3/5 ">
-          {" "}
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <Image
-                className="rounded-xl "
-                src="/images/test.jpg"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover" // L'image couvrira entièrement le conteneur
-                objectPosition="center" // Centrer l'image dans le conteneur
-              />
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Expert
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
-              >
-                A partir de 2500€
-              </Badge>
-            </CardFooter>
-          </Card>
+    <div className=" h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden">
+      <div className="h-[20vh] w-full flex items-center justify-center ">
+        <div className="h-5/6 w-5/6 flex items-center justify-center">
+          <h1 className="text-6xl lg:text-6xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent ">
+            Solutions
+          </h1>
         </div>
       </div>
-
-      {/* PC */}
-      <div className="hidden xl:flex h-[90vh] w-[100vw] justify-around items-center">
-        <div className="h-2/4 w-1/4 ">
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <div className=" w-[25vw] h-[90vh]">
-                <Image
-                  className="rounded-xl"
-                  src="/images/test.jpg"
-                  alt="Picture of the author"
-                  layout="fill"
-                  objectFit="cover" // L'image couvrira entièrement le conteneur
-                  objectPosition="center" // Centrer l'image dans le conteneur
-                />
-              </div>
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Basic
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
+      <div className="h-[60vh] w-screen flex items-center justify-center">
+        {/* PHONE & TAB CAROUSEL */}
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full max-w-sm lg:hidden"
+        >
+          <CarouselContent>
+            {/* Itérer sur les données des cartes */}
+            {cardsData.map((card, index) => (
+              <CarouselItem
+                key={index}
+                className="flex items-center justify-center"
               >
-                A partir de 350€
-              </Badge>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="h-2/4 w-1/4 ">
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <div className=" w-[25vw] h-[90vh]">
-                <Image
-                  className="rounded-xl"
-                  src="/images/test.jpg"
-                  alt="Picture of the author"
-                  layout="fill"
-                  objectFit="cover" // L'image couvrira entièrement le conteneur
-                  objectPosition="center" // Centrer l'image dans le conteneur
-                />
-              </div>
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Middle
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
-              >
-                A partir de 800€
-              </Badge>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className="h-2/4 w-1/4 ">
-          <Card className="h-full w-full bg-transparent border-none">
-            <CardContent className="h-5/6 w-full relative">
-              <Image
-                className="rounded-xl "
-                src="/images/test.jpg"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover" // L'image couvrira entièrement le conteneur
-                objectPosition="center" // Centrer l'image dans le conteneur
+                <div className="p-1">
+                  <CardComponent
+                    title={card.title}
+                    description={card.description}
+                    price={card.price}
+                    functionality1={card.functionality1}
+                    functionality2={card.functionality2}
+                    functionality3={card.functionality3}
+                    functionality4={card.functionality4}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        {/* PC CARDS */}
+        <div className="hidden lg:flex items-center justify-center">
+          {cardsData.map((card, index) => (
+            <div className="w-1/3 h-[60vh pr-10 pl-10 flex items-center justify-around ">
+              <CardComponent
+                title={card.title}
+                description={card.description}
+                price={card.price}
+                functionality1={card.functionality1}
+                functionality2={card.functionality2}
+                functionality3={card.functionality3}
+                functionality4={card.functionality4}
               />
-            </CardContent>
-            <CardFooter className="h-1/6 w-full">
-              <Badge className="rounded-xl text-white " variant="outline">
-                Expert
-              </Badge>
-              <div className="w-3"></div>
-              <Badge
-                className="rounded-xl bg-spotify text-white border-none"
-                variant="outline"
-              >
-                A partir de 2500€
-              </Badge>
-            </CardFooter>
-          </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="h-[20vh] w-full flex items-center justify-center ">
+        <div className="h-5/6 w-5/6 flex items-center justify-center">
+          <Button
+            className=" rounded-full border-none bg-myGreyButtonBg"
+            variant="outline"
+          >
+            View Plans
+            <FaArrowRight />
+          </Button>
         </div>
       </div>
     </div>

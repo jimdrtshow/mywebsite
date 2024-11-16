@@ -17,6 +17,7 @@ const config: Config = {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
 			spotify: '#1ed760',
+			greyCard: '#2c2c2c',
 			myGreyButtonBg: '#1e1f22',
 			myGreyWebsiteBg: '#0d0a0a',
 			myGreyText: '#87878f',

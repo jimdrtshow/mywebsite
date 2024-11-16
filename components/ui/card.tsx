@@ -8,7 +8,10 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("rounded-xl border bg-card text-card-foreground", className)}
+    className={cn(
+      "w-[300px] h-[400px] rounded-xl border bg-card text-card-foreground ",
+      className
+    )}
     {...props}
   />
 ));
@@ -20,7 +23,7 @@ const CardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    className={cn("flex flex-col space-y-4 p-6", className)}
     {...props}
   />
 ));
@@ -32,7 +35,7 @@ const CardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("font-semibold leading-none tracking-tight", className)}
+    className={cn("font-semibold leading-none tracking-tighter", className)}
     {...props}
   />
 ));
@@ -50,11 +53,26 @@ const CardDescription = React.forwardRef<
 ));
 CardDescription.displayName = "CardDescription";
 
+const CardPrice = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "space-y-4 p-6 pt-0 font-semibold leading-none tracking-tighter",
+      className
+    )}
+    {...props}
+  />
+));
+CardPrice.displayName = "CardPrice";
+
 const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
+  <div ref={ref} className={cn("space-y-4 p-6 pt-0", className)} {...props} />
 ));
 CardContent.displayName = "CardContent";
 
@@ -64,7 +82,7 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex items-center justify-end   pt-5 w-full", className)}
+    className={cn("flex items-center justify-center ", className)}
     {...props}
   />
 ));
@@ -77,4 +95,5 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
+  CardPrice,
 };
