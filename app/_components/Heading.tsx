@@ -8,7 +8,7 @@ import { CiPhone } from "react-icons/ci";
 
 export default function Heading() {
   return (
-    <div className="w-screen h-screen overflow-hidden bg-myGreyWebsiteBg">
+    <div className="w-screen h-screen overflow-hidden ">
       {/* NAVBAR */}
       <div className="w-full h-[10vh]"></div>
 
@@ -26,7 +26,7 @@ export default function Heading() {
         {/* Homepage Content 2/3 Heading*/}
         <div className="w-full h-[20vh] flex justify-center items-end  ">
           <div className="w-4/5 h-4/5 flex justify-center items-end  ">
-            <h1 className="text-4xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent">
+            <h1 className="text-4xl lg:text-6xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent">
               Web solutions built to elevate.
             </h1>
           </div>
@@ -34,7 +34,7 @@ export default function Heading() {
         {/* Homepage Content 3/3 Paragraph*/}
         <div className="w-full h-[25vh] flex justify-center items-start">
           <div className="w-4/5 h-4/5 flex justify-center items-center">
-            <p className="text-base md:text-xl text-myGreyText text-center">
+            <p className="text-base md:text-xl text-myGreyText text-center tracking-wider ">
               Crafting high-performance websites tailored to your needs,
               enhancing user experience, optimizing speed, and driving your
               business forward.
@@ -44,8 +44,8 @@ export default function Heading() {
       </div>
 
       {/* HOMPEPAGE BUTTONS */}
-      <div className="w-full h-[30vh] flex items-center justify-center">
-        <div className="w-4/5 h-h-[20vh]">
+      <div className="w-full h-[30vh] flex items-start justify-center">
+        <div className="w-4/5 h-[20vh]">
           {/* Contact Us Button */}
           <div className="w-full h-[10vh] flex items-center justify-center ">
             <Button

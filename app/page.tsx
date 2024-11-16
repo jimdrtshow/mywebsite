@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       {/* <Navigation /> */}
       <Heading />
-      {/* <AboutUs /> */}
+      <AboutUs />
 
       {/* <Services /> */}
       {/* <Projects /> */}
