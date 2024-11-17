@@ -1,8 +1,8 @@
 // pages/index.tsx
 // pages/index.tsx
-import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
-import { Prompt } from "next/font/google";
+
 import { FaArrowRight } from "react-icons/fa6";
 import { CiPhone } from "react-icons/ci";
 

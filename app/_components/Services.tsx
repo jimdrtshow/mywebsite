@@ -65,9 +65,9 @@ export default function Heading() {
         >
           <CarouselContent>
             {/* Itérer sur les données des cartes */}
-            {cardsData.map((card, index) => (
+            {cardsData.map((card) => (
               <CarouselItem
-                key={index}
+                key={card.title}
                 className="flex items-center justify-center"
               >
                 <div className="p-1">
@@ -89,8 +89,11 @@ export default function Heading() {
         </Carousel>
         {/* PC CARDS */}
         <div className="hidden lg:flex items-center justify-center">
-          {cardsData.map((card, index) => (
-            <div className="w-1/3 h-[60vh pr-10 pl-10 flex items-center justify-around ">
+          {cardsData.map((card) => (
+            <div
+              key={card.title}
+              className="w-1/3 h-[60vh pr-10 pl-10 flex items-center justify-around "
+            >
               <CardComponent
                 title={card.title}
                 description={card.description}
