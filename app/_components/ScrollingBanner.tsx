@@ -2,10 +2,7 @@
 // pages/index.tsx
 import { RiNextjsLine } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiPrisma } from "react-icons/si";
-import { IoLogoVercel } from "react-icons/io5";
-import { SiGoogleads } from "react-icons/si";
+
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { SiVisualstudiocode } from "react-icons/si";
