@@ -47,7 +47,10 @@ const cardsData = [
 // Composant Heading avec le carrousel
 export default function Heading() {
   return (
-    <div className=" h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden">
+    <div
+      id="services"
+      className=" h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden"
+    >
       <div className="h-[20vh] w-full flex items-center justify-center ">
         <div className="h-5/6 w-5/6 flex items-center justify-center">
           <h1 className="text-6xl lg:text-6xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent ">

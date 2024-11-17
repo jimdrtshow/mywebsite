@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function AboutUs() {
   return (
-    <div className="h-screen w-screen overflow-hidden">
+    <div id="aboutUs" className="h-screen w-screen overflow-hidden">
       {/* About Us Heading */}
       <div className="h-[50vh] w-full ">
         {/* About Us Title */}

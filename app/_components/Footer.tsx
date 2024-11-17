@@ -3,7 +3,10 @@ import { IoMailOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className="w-screen h-[30vh] flex flex-col  justify-around items-center ">
+    <footer
+      id="footer"
+      className="w-screen h-[30vh] flex flex-col  justify-around items-center "
+    >
       <div className=" w-screen h-auto flex flex-col">
         <div className="w-full h-[10vh] flex items-center justify-center">
           <ul className="flex flex-row items-center justify-center text-sm text-myGreyText">

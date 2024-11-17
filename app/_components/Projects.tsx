@@ -6,7 +6,10 @@ export default function Projects() {
   return (
     <div className="h-auto w-screen">
       {/* PROJECTS TITLE */}
-      <div className="h-[20vh] w-full flex items-center justify-center ">
+      <div
+        id="projects"
+        className="h-[20vh] w-full flex items-center justify-center "
+      >
         <div className="h-5/6 w-5/6 flex items-center justify-center">
           <h1 className="text-6xl lg:text-6xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent ">
             Projects
