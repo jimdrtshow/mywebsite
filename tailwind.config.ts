@@ -11,7 +11,7 @@ const config: Config = {
   	extend: {
 		// Heading Text Color Gradient
 		backgroundImage: {
-			'heading-gradient': 'linear-gradient(90deg, rgba(255, 255, 255, 1) 30%, rgba(88, 87, 87, 1) 100%)',
+			'heading-gradient': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(127,126,130,1) 100%)',
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
