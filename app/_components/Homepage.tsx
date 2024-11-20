@@ -8,7 +8,7 @@ export default function Homepage() {
       {/* BACKGROUND */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-30"
-        src="/videos/homepage.mp4" // Chemin vers ta vidéo dans le dossier public
+        src="/videos/homepage.mp4"
         autoPlay
         loop
         muted
@@ -61,6 +61,7 @@ export default function Homepage() {
           />
         </div>
       </div>
+      <div className="w-screen  h-[20vh]"></div>
     </section>
   );
 }

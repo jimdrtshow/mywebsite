@@ -1,5 +1,4 @@
-import Heading from "./_components/Heading";
-import AboutUs from "./_components/AboutUs";
+import About from "./_components/About";
 import Services from "./_components/Services";
 import Projects from "./_components/Projects";
 import ScrollingBanner from "./_components/ScrollingBanner";
@@ -10,12 +9,11 @@ import Homepage from "./_components/Homepage";
 export default function Home() {
   return (
     <main>
+      {/* <NavBar /> */}
       <Homepage />
-      {/* <Navigation />
-      <NavBar />
-      <Heading />
-      <AboutUs />
-      <Services />
+
+      <About />
+      {/* <Services />
       <Projects />
       <ScrollingBanner />
       <Footer /> */}
