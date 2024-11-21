@@ -9,19 +9,24 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-		// Heading Text Color Gradient
-		backgroundImage: {
-			'heading-gradient': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(127,126,130,1) 100%)',
-		  },
+  		backgroundImage: {
+  			'heading-gradient': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(127,126,130,1) 100%)', 
+			'sub-title': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 110%)', 
+			'my-bg': 'radial-gradient(circle, rgba(30,31,34,1) 70%, rgba(26,56,153,0.5243231081495099) 100%)', 
+
+  		},
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-			spotify: '#1ed760',
-			greyCard: '#2c2c2c',
-			myGreyButtonBg: '#1e1f22',
-			myGreyWebsiteBg: '#0d0a0a',
-			myGreyText: '#87878f',
-			myGreyTextGradient: '#abbaab',
+  			spotify: '#1ed760',
+  			greyCard: '#2c2c2c',
+  			myGreyButtonBg: '#1e1f22',
+  			myGreyWebsiteBg: '#0d0a0a',
+  			myGreyText: '#87878f',
+  			myGreyTextGradient: '#abbaab',
+  			myBlue: '#1a3899',
+			myCyan: '#1f556b',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -65,6 +70,28 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },
