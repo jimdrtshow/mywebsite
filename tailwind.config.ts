@@ -12,7 +12,7 @@ const config: Config = {
   		backgroundImage: {
   			'heading-gradient': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(127,126,130,1) 100%)', 
 			'sub-title': 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 110%)', 
-			'my-bg': 'radial-gradient(circle, rgba(30,31,34,1) 70%, rgba(26,56,153,0.5243231081495099) 100%)', 
+			'my-bg': 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,56,153,1) 50%, rgba(31,85,107,1) 80%, rgba(0,0,0,1) 100%)', 
 
   		},
 
@@ -95,6 +95,9 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+	require("tailwind-hamburgers")
+],
 };
 export default config;

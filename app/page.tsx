@@ -5,18 +5,19 @@ import ScrollingBanner from "./_components/ScrollingBanner";
 import Footer from "./_components/Footer";
 import NavBar from "./_components/NavBar";
 import Homepage from "./_components/Homepage";
+// import Test from "./_components/Test";
 
 export default function Home() {
   return (
     <main>
-      {/* <NavBar /> */}
+      {/* <Test /> */}
+      <NavBar />
       <Homepage />
-
       <About />
       {/* <Services />
       <Projects />
-      <ScrollingBanner />
-      <Footer /> */}
+      <ScrollingBanner />*/}
+      <Footer />
     </main>
   );
 }
