@@ -1,5 +1,5 @@
 import menuItems from "@/data/menuItems";
-
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
@@ -10,9 +10,7 @@ export default function NavigationPcTab() {
       <div className="w-11/12 h-full  flex items-center justify-between border-b border-white">
         {/* LOGO */}
         <div className="w-1/6 h-full flex items-center justify-center ">
-          <h1 className="text-3xl text-center  font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent">
-            JimDrt.
-          </h1>
+          <Image src="/logos/firs.svg" alt="#" width={100} height={100} />
         </div>
         {/* MENU ITEMS */}
         <div className="w-4/6 h-full flex items-center justify-center">
@@ -22,7 +20,9 @@ export default function NavigationPcTab() {
               href={item.href}
               className="hover:text-gray-400 transition p-6 flex items-start justify-between text-xl"
             >
-              <span className="text-gray-600 text-sm pr-3"> 0{index + 1}</span>
+              <span className="text-gray-400 text-sm font-bold pr-3 font-sans ">
+                0{index + 1}
+              </span>
               {item.label}
             </Link>
           ))}

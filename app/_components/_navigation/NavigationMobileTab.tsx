@@ -2,9 +2,10 @@
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import clsx from "clsx";
-import menuItems from "@/data/menuItems"; // Assure-toi que tu as ce fichier correctement
+import menuItems from "@/data/menuItems";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 export default function NavigationMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,9 +78,7 @@ export default function NavigationMobile() {
         <div className="w-11/12 h-full flex justify-between items-center border-b border-white">
           {/* TITLE */}
           <div className="w-1/2 h-full flex justify-start items-center">
-            <h1 className="text-2xl text-center  font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent">
-              JimDrt.
-            </h1>
+            <Image src="/logos/firs.svg" alt="#" width={50} height={50} />
           </div>
           {/* MENU BUTTON FALSE */}
           <div className="w-1/2 h-full flex justify-end items-center ">
