@@ -18,7 +18,7 @@ export default function NavigationPcTab() {
             <Link
               key={item.label}
               href={item.href}
-              className="hover:text-gray-400 transition p-6 flex items-start justify-between text-xl"
+              className="hover:text-gray-400 transition p-6 flex items-start justify-between text-xl text-white"
             >
               <span className="text-gray-400 text-sm font-bold pr-3 font-sans ">
                 0{index + 1}

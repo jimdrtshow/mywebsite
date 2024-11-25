@@ -1,7 +1,6 @@
-import About from "./_components/About";
 import Services from "./_components/Services";
-import Projects from "./_components/Projects";
-import Footer from "./_components/Footer";
+import AboutUs from "./_components/AboutUs";
+
 import Navigation from "./_components/Navigation";
 import Homepage from "./_components/Homepage";
 // import Test from "./_components/Test";
@@ -12,11 +11,10 @@ export default function Home() {
       {/* <Test /> */}
       <Navigation />
       <Homepage />
-      <About />
+      <AboutUs />
       {/* <Services />
       <Projects />
       <ScrollingBanner />*/}
-      <Footer />
     </main>
   );
 }

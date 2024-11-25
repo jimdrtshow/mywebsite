@@ -1,94 +1,69 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { FaArrowRight } from "react-icons/fa6";
-
 export default function AboutUs() {
   return (
-    <div id="aboutUs" className="h-screen w-screen overflow-hidden">
-      {/* About Us Heading */}
-      <div className="h-[50vh] w-full ">
-        {/* About Us Title */}
-        <div className="h-[20vh] w-full flex items-center justify-center ">
-          <div className="h-5/6 w-5/6 flex items-center justify-center">
-            <h1 className="text-6xl lg:text-6xl md:text-5xl text-center font-bold tracking-wider bg-heading-gradient bg-clip-text text-transparent ">
-              Our Vision
+    <section
+      id="aboutUs"
+      className="h-auto w-screen flex items-center justify-center"
+    >
+      <div className="h-full w-11/12 ">
+        {/* EMPTY  */}
+        <div className="w-full h-[1vh] border-b border-gray-600"></div>
+        {/* TITLE  */}
+        <div className="h-auto w-full  lg:flex flex-row">
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-5 mb-5 ">
+            <h1 className="text-3xl md:text-5xl font-sans font-semibold leading-8 text-gray-800">
+              Where creativity and strategy come together to create digital
+              solutions that drive success. We deliver innovative and cutting
+              edge digital experiences that make a lasting impact.
             </h1>
           </div>
-        </div>
-        {/* About Us Text */}
-        <div className="w-screen h-[30vh] flex justify-center items-start">
-          <div className="w-5/6 h-5/6 flex justify-center items-center ">
-            <p className="text-base md:text-xl text-myGreyText text-center tracking-wider ">
-              Creating high-performance websites designed for your needs,
-              enhancing user engagement, optimizing speed and functionality, and
-              driving your business forward with lasting impact.
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-end">
+            <p className="text-xl text-gray-600 pt-5 hidden lg:block">
+              Welcome
             </p>
           </div>
         </div>
-      </div>
-      {/* PHONE */}
-      <div className="md:hidden">
-        {/* About Us Images for phone*/}
-        <div className="h-[40vh] w-full flex justify-center items-center">
-          <div className="w-5/6 h-4/6 flex justify-end items-center relative">
-            <Image
-              src="/images/homepage.png"
-              alt="#"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
+        {/* INNOVATION */}
+        <div className="h-auto w-full  lg:flex flex-row border-b border-gray-400">
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
+            <p className="text-2xl md:text-4xl font-sans font-semibold leading-5 text-gray-800 pt-5 ">
+              Innovatation
+            </p>
+          </div>
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-20 mb-20 lg:m-20 ">
+            <h1 className="text-xl font-sans font-semibold leading-5 text-gray-600">
+              <span className=" text-gray-800 font-bold text-2xl">
+                Great Experiences Start with Bold Ideas
+              </span>
+              <br /> <br /> Our team blends creativity with technical expertise
+              to deliver innovative solutions that help your brand stand out.
+              From strategy to execution, we create digital products that not
+              only meet your goals but exceed expectations, driving growth and
+              engagement.
+            </h1>
           </div>
         </div>
-        {/* About Us Button More for phone */}
-        <div className="h-[10vh] w-full flex justify-center items-center">
-          <div className="h-5/6 w-11/12 flex justify-end items-center">
-            <Button
-              className="rounded-full border-none text-myGreyText bg-myGreyButtonBg"
-              variant="outline"
-            >
-              more <FaArrowRight />
-            </Button>
+        {/* IMPACT */}
+        <div className="h-auto w-full  lg:flex flex-row border-b border-gray-400">
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
+            <p className="text-2xl md:text-4xl font-sans font-semibold leading-5 text-gray-800 pt-5 ">
+              Impact
+            </p>
           </div>
-        </div>
-      </div>
-      {/* PC & Tablet */}
-      <div className="h-[50vh] w-full sm:hidden md:flex lg:flex ">
-        {/* LEFT */}
-        <div className="h-full w-1/2 left flex justify-center items-center ">
-          <div className="h-[45vh] w-[48vw] left flex justify-center items-center relative">
-            <Image
-              src="/images/aboutus1.png"
-              alt="#"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-        {/* RIGHT */}
-        <div className="h-full w-1/2 left flex items-center justify-center">
-          <div className="h-[45vh] w-[45vw] flex flex-col justify-center items-center relative">
-            <div className="h-[40vh] w-full flex items-center justify-center relative">
-              <Image
-                src="/images/aboutus2.png"
-                alt="#"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
-            <div className="h-[10vh] w-5/6 left  flex items-end justify-end">
-              <Button
-                className="rounded-full border-none bg-transparent text-white"
-                variant="secondary"
-              >
-                more <FaArrowRight />
-              </Button>
-            </div>
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-20 mb-20 lg:m-20  ">
+            <h1 className="text-xl font-sans font-semibold leading-5 text-gray-600">
+              <span className=" text-gray-800 font-bold text-2xl">
+                Building for the Future, Not Just Today
+              </span>
+              <br /> <br /> We focus on delivering results that have a lasting
+              impact, creating digital solutions that grow with your business.
+              Whether it's a new website, a rebranding effort, or a digital
+              campaign, we ensure that our work continues to add value long
+              after launch, helping your brand stay relevant and competitive.
+            </h1>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

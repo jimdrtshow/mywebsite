@@ -1,13 +1,13 @@
 import MyBadgeComponent from "@/components/ui/myBadgeComponent";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Homepage() {
   return (
     <section
       id="homePage"
-      className="w-screen h-screen overflow-hidden relative bottom-[20vh] -z-10 flex items-center justify-center    "
+      className="w-screen h-screen overflow-hidden relative bottom-[20vh] -z-10 flex items-center justify-center bg-black    "
     >
       {/* BACKGROUND */}
       <Image
@@ -21,7 +21,7 @@ export default function Homepage() {
       <div className="h-4/6 w-11/12 flex flex-col lg:flex-row items-center justify-center  relative top-[10vh] z-10">
         <div className="h-1/2 lg:h-full w-full lg:w-1/2  flex flex-col items-center justify-center">
           <div className="h-full md:h-3/4 w-full flex items-start lg:items-end justify-start">
-            <p className="text-2xl md:text-4xl lg:text-6xl font-sans font-semibold leading-5">
+            <p className="text-2xl md:text-4xl lg:text-6xl font-sans font-semibold leading-5 text-white">
               An ambitious digital <br /> agency from London
             </p>
           </div>

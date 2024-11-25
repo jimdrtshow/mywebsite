@@ -27,7 +27,7 @@ export default function RootLayout({
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </head>
       <body
-        className={`${GeistSans.className} antialiased bg-black text-white`}
+        className={`${GeistSans.className} antialiased bg-gray-50 text-gray-800`}
       >
         {children}
       </body>
