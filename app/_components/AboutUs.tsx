@@ -44,7 +44,7 @@ export default function AboutUs() {
           </div>
         </div>
         {/* IMPACT */}
-        <div className="h-auto w-full  lg:flex flex-row border-b border-gray-400">
+        <div className="h-auto w-full  lg:flex flex-row ">
           <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
             <p className="text-2xl md:text-4xl font-sans font-semibold leading-5 text-gray-800 pt-5 ">
               Impact
@@ -61,6 +61,28 @@ export default function AboutUs() {
               campaign, we ensure that our work continues to add value long
               after launch, helping your brand stay relevant and competitive.
             </h1>
+          </div>
+        </div>
+
+        {/* IMAGES */}
+        <div className="h-screen lg:h-[50vh] w-full  flex items-center justify-center pt-5  ">
+          <div className="h-full w-11/12 block lg:flex justify-between">
+            <div className=" h-1/3 lg:h-full w-full lg:w-4/12 relative top-10 lg:top-0">
+              <Image
+                src="/images/aboutus1.webp"
+                alt="#"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className=" h-1/3 lg:h-full w-full lg:w-6/12 relative top-20 lg:top-0">
+              <Image
+                src="/images/aboutus2.webp"
+                alt="#"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
         </div>
       </div>
