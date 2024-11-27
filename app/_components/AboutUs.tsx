@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { FaArrowRight } from "react-icons/fa";
+
 export default function AboutUs() {
   return (
     <section
@@ -83,6 +86,25 @@ export default function AboutUs() {
                 objectFit="cover"
               />
             </div>
+          </div>
+        </div>
+        {/* EMPTY  */}
+        <div className="w-full h-[10vh]"></div>
+        {/* TITLE  */}
+        <div className="h-auto w-full  lg:flex flex-row">
+          <div className="h-[20h] w-full lg:w-2/3  flex items-start justify-start mt-5 mb-5  ">
+            <Button
+              className=" w-auto h-[50px] bg-transparent text-black flex items-center justify-between -tracking-tight text-3xl  overflow-hidden"
+              variant="secondary"
+            >
+              <FaArrowRight className="text-black -rotate-45" />
+              Read more about us
+            </Button>
+          </div>
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-end">
+            <p className="text-xl text-gray-600 pt-5 hidden lg:block">
+              Stil curious?
+            </p>
           </div>
         </div>
       </div>
