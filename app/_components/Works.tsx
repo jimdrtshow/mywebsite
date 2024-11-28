@@ -29,23 +29,63 @@ export default function Works() {
           </div>
           <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-end">
             <p className="text-xl text-gray-600 pt-5 hidden lg:block">
-              Projects
+              Latest projects
             </p>
           </div>
         </div>
-        {/* TEXT  */}
-        <div className="w-full h-auto flex">
-          <div className="w-1/2 h-full "></div>
-          <div className="w-1/2 h-full ">
-            <div className="w-full h-1/4 p-5">
-              <Image src="/images/about.jpg" alt="#" width={500} height={500} />
-            </div>
-            <div className="w-full h-1/4 p-5">
-              <Image src="/images/about.jpg" alt="#" width={500} height={500} />
-            </div>
-            <div className="w-full h-1/4 p-5">
-              <Image src="/images/about.jpg" alt="#" width={500} height={500} />
-            </div>
+
+        {/* WOrk1 */}
+        <div className="h-auto w-full  lg:flex flex-row ">
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
+            <Image src="/images/about.jpg" alt="#" width={500} height={500} />
+          </div>
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-20 mb-20 lg:m-20  ">
+            <h1 className="text-xl font-sans font-semibold leading-5 text-gray-600">
+              <span className=" text-gray-800 font-bold text-2xl">
+                Building for the Future, Not Just Today
+              </span>
+              <br /> <br /> We focus on delivering results that have a lasting
+              impact, creating digital solutions that grow with your business.
+              Whether it's a new website, a rebranding effort, or a digital
+              campaign, we ensure that our work continues to add value long
+              after launch, helping your brand stay relevant and competitive.
+            </h1>
+          </div>
+        </div>
+        {/* WOrk1 */}
+        <div className="h-auto w-full  lg:flex flex-row ">
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
+            <Image src="/images/about.jpg" alt="#" width={500} height={500} />
+          </div>
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-20 mb-20 lg:m-20  ">
+            <h1 className="text-xl font-sans font-semibold leading-5 text-gray-600">
+              <span className=" text-gray-800 font-bold text-2xl">
+                Building for the Future, Not Just Today
+              </span>
+              <br /> <br /> We focus on delivering results that have a lasting
+              impact, creating digital solutions that grow with your business.
+              Whether it's a new website, a rebranding effort, or a digital
+              campaign, we ensure that our work continues to add value long
+              after launch, helping your brand stay relevant and competitive.
+            </h1>
+          </div>
+        </div>
+        {/* WOrk1 */}
+        <div className="h-auto w-full  lg:flex flex-row ">
+          <div className="h-2/5 lg:h-full w-full lg:w-1/3 flex items-start justify-start  mt-20  ">
+            <Image src="/images/about.jpg" alt="#" width={500} height={500} />
+          </div>
+          <div className="h-3/5 lg:h-full w-full lg:w-2/3  flex items-center justify-center mt-20 mb-20 lg:m-20  ">
+            <h1 className="text-xl font-sans font-semibold leading-5 text-gray-600">
+              <span className=" text-gray-800 font-bold text-2xl">
+                Building for the Future, Not Just Today
+              </span>
+              <br /> <br /> We focus on delivering results that have a lasting
+              impact, creating digital solutions that grow with your business.
+              Whether it's a new website, a rebranding effort, or a digital
+              campaign, we ensure that our work continues to add value long
+              after launch, helping your brand stay relevant and competitive.
+            </h1>
           </div>
         </div>
       </div>
